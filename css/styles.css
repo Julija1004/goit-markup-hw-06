@@ -674,9 +674,7 @@ color: var(--secondary-color);
     margin-left: 70px;
 }
 
-.main-footer__wrapper{
-    align-items: baseline;
-}
+
 
 .main-footer__join-us__txt{
 font-weight: 700;
@@ -691,7 +689,7 @@ color: #FFFFFF;
     display: flex;
     gap: 10px;
     margin-inline: auto;
-    margin-top: 16px;
+    margin-top: 20px;
 
 }
 
@@ -844,6 +842,9 @@ fill: #FFFFFF;
     display: flex;
     flex-direction: column;
 }
+
+
+
 .modal-form-capture{
 font-family: 'Roboto';
 font-style: normal;
@@ -890,7 +891,9 @@ margin-bottom: 4px;
     margin-bottom: 10px;
 }
 
-
+.modal-form-field-textaria {
+    margin-bottom: 20px;
+}
 .modal-form-icon {
     position: absolute;
     top: 50%;
@@ -906,8 +909,36 @@ margin-bottom: 4px;
     display: block;
     
 }
+.modal-form-checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbox-text {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: #757575;
+}
+
+.checkbox-link {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+text-decoration-line: underline;
+color: #2196F3;
+}
 
 .modal-form-message {
+    display: block
+    ;
     width: 100%;
     height: 120px;
     resize: none;
@@ -928,7 +959,7 @@ margin-bottom: 4px;
 
 .modal-form-own-checkbox {
     cursor: pointer;
-    border: 1px solid #212121;
+    border: 2px solid #212121;
     border-radius: 2px;
     width: 16px;
     height: 16px;
@@ -944,7 +975,7 @@ margin-bottom: 4px;
 display: block;
 }
 .modal-form-checkbox:checked + .modal-form-own-checkbox {
-    border-color: transparent;
+    border: transparent;
 }
 .modal-form-checkbox {
     position: absolute;
@@ -986,9 +1017,16 @@ display: block;
         text-transform: uppercase;
         color: var(--main-light);
         margin-left: 93px;
-        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
     }
     
+    .div-logo {
+
+        flex-grow: 1;
+    }
     .newsletter p{
     margin-bottom: 20px;
     }
@@ -999,7 +1037,8 @@ display: block;
     
     .newsletter__flex-container{
         display: flex;
-        }
+        margin-top: 20px;
+                }
     
     .newsletter_text-field{
         height: 50px;
@@ -1066,12 +1105,9 @@ display: block;
         content: "";
         width: 24px;
         height: 24px;
-    
-        position: absolute;
+        margin-left: 8px;
         top: 50%;
         right: 28px;
-        transform: translateY(-50%);
-    
         background-image: url(../images/send.svg);
         background-repeat: no-repeat;
     

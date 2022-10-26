@@ -356,7 +356,7 @@
 </main>
     <footer class="main-footer">
         <div class="main-footer__wrapper container flex-container">
-            <div>
+            <div class="div-logo">
         <a class="logo-white" href="./index.html">
             <p><span class="logo-white">Web</span><span class="logo-color">Studio</span></p> 
             </a>
@@ -409,12 +409,13 @@
   </div>
   <form class="newsletter">
     <label>
-      <p>Subscribe to the newsletter</p>
-      <div class="newsletter__flex-container">
+      <span>Subscribe to the newsletter</span>
+      <span class="newsletter__flex-container">
         <input class="newsletter_text-field" type="text" name="newsletter_sub" placeholder="E-mail" />
         <button class="newsletter_btn-suscribe">Підписатися</button>
-      </div>
+      </span>
     </label>
+    
   </form>
 </div>
 
@@ -474,7 +475,7 @@
         </svg>
       </span>
       </label>
-      <label class="modal-form-field">
+      <label class="modal-form-field-textaria">
         <span class="module-form-input-desk">Коментар</span>
          <textarea name="user_message" class="modal-form-message"
          placeholder="Введіть текст"></textarea>
@@ -484,7 +485,7 @@
         <svg class="modal-form-own-checkbox" width="16px" height="16px">
           <use class="modal-form-own-checkbox-icon" href="./images/icons.svg#icon-check"></use>
         </svg>
-        Погоджуюся з розсилкою та приймаю&nbsp;<a href="">Умови договору</a> 
+        <span class="checkbox-text">Погоджуюся з розсилкою та приймаю&nbsp;</span><a class="checkbox-link" href="">Умови договору</a> 
       </label>
       <button class="modal-form-submit" type="submit">Відправити</button>
     </form>
