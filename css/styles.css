@@ -103,7 +103,10 @@ li {
     align-items: center;
 }
 
-
+.flex-container_footer {
+    display: flex;
+    margin-top: 20px;
+}
 
 .site-nav-link {
     text-decoration: none;
@@ -685,6 +688,10 @@ text-transform: uppercase;
 color: #FFFFFF;
 }
 
+.main-footer__wrapper {
+    align-items: baseline;
+}
+
 .main-footer__svg-container{
     display: flex;
     gap: 10px;
@@ -1017,7 +1024,7 @@ display: block;
         text-transform: uppercase;
         color: var(--main-light);
         margin-left: 93px;
-        display: flex;
+        /*display: flex;*/
         align-items: center;
         justify-content: center;
         
