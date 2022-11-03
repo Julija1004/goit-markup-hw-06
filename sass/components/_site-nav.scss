@@ -2,11 +2,11 @@
     align-items: center;
     transition: color var(--transition-dur-and-func);
     
-    
+    &:not(:last-child) {
+        margin-right: 50px
+    }
 }
-.site-nav-item: not (:last-child) {
-    margin-right: 50px
-}
+
 .site-nav {
     display: flex;
     column-gap: 50px;
@@ -22,39 +22,29 @@
     align-items: center;
     margin-left: auto;
     transition: color var(--transition-dur-and-func);
-}
-.site-nav-link:focus {color: var(--outline-color);
-
-}
-.is-active::after{
-    position: absolute;
-    bottom: -32px; 
-    left: 0;
-    width: 100%;
-    content: "";
-    display: block;
-    height: 4px;
-    border-radius: 2px;
-    background-color: var(--outline-color);
-}
-.is-active{
-    color: var(--outline-color);
-}
-.is-active{
-    color: var(--outline-color);
+    &:focus {color: var(--outline-color);
 }
 
-.is-active::after{
-    position: absolute;
-    bottom: -32px; 
-    left: 0;
-    width: 100%;
-    content: "";
-    display: block;
-    height: 4px;
-    border-radius: 2px;
-    background-color: var(--outline-color);
+
 }
+
+.is-active{
+    color: var(--outline-color);
+    &::after{
+        position: absolute;
+        bottom: -32px; 
+        left: 0;
+        width: 100%;
+        content: "";
+        display: block;
+        height: 4px;
+        border-radius: 2px;
+        background-color: var(--outline-color);
+    }
+}
+
+
+
 .auth-nav {
     display: flex;
     column-gap: 50px;
@@ -83,18 +73,19 @@ justify-content: center;
     text-decoration: none;
     align-items: center;
     transition: color var(--transition-dur-and-func);
-    
-}
-.auth-nav-link: (:last-child) {
-    margin-right: 0px;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    transition: color var(--transition-dur-and-func);
-}
-.auth-nav-link:focus,.auth-nav-link:hover  {color: var(--outline-color);
+    &:last-child {
+        margin-right: 0px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        transition: color var(--transition-dur-and-func);
+    }
+   &:focus,&:hover  {color: var(--outline-color);
 
+    }
 }
+
+
 
 
 .current {
@@ -105,11 +96,12 @@ justify-content: center;
     font-size: 14px;
     position: relative;
     transition: color var(--transition-dur-and-func);
+    &:hover, &:focus {
+        color: var(--outline-color)
+    }
 }
 
-.current:hover, .current:focus {
-    color: var(--outline-color)
-}
+
 .site-nav-link {
     text-decoration: none;
     font-weight: 500;
@@ -118,9 +110,10 @@ justify-content: center;
     color: var(--main-color-fomt);
     display: flex;
     transition: var(--outline-color);
+    &:hover, &:focus {
+        color: var(--outline-color);
 }
-.site-nav-link:hover, .site-nav-link:focus {
-    color: var(--outline-color);
+
 }
 .site-nav-item {
     font-family: 'Roboto';

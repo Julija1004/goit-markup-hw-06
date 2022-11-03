@@ -42,23 +42,23 @@ margin-bottom: 20px;
     font-weight: normal;
 
     transition: outline-color var(--transition-dur-and-func);
-
+    &::placeholder{
+        font-size: 16px;
+    
+        font-weight: 400;
+    
+        line-height: 1.25;
+        color: rgba(255, 255, 255, 0.6);
+    }
+    
+    &:focus,
+    &:active {
+        border-color: var(--outline-color);
+        outline: var(--outline-color) thick;
+    }
 }
 
-.newsletter_text-field::placeholder{
-    font-size: 16px;
 
-    font-weight: 400;
-
-    line-height: 1.25;
-    color: rgba(255, 255, 255, 0.6);
-}
-
-.newsletter_text-field:focus,
-.newsletter_text-field:active {
-    border-color: var(--outline-color);
-    outline: var(--outline-color) thick;
-}
 
 .newsletter_btn-suscribe{
 
@@ -87,22 +87,21 @@ margin-bottom: 20px;
     cursor: pointer;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
-
+    &::after{
+        content: "";
+        width: 24px;
+        height: 24px;
+        margin-left: 8px;
+        top: 50%;
+        right: 28px;
+        background-image: url(../images/send.svg);
+        background-repeat: no-repeat;
+    
+    }
+    
+    &:active, 
+    &:focus{
+        background-color: #188CE8;
+    }
 }
 
-.newsletter_btn-suscribe::after{
-    content: "";
-    width: 24px;
-    height: 24px;
-    margin-left: 8px;
-    top: 50%;
-    right: 28px;
-    background-image: url(../images/send.svg);
-    background-repeat: no-repeat;
-
-}
-
-.newsletter_btn-suscribe:active, 
-.newsletter_btn-suscribe:focus{
-    background-color: #188CE8;
-}

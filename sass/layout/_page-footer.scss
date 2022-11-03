@@ -15,10 +15,7 @@
     margin-top: 20px;
 }
 
-    .link-footer: not(:first-child) {
-        margin-top:9px;
-        
-    }
+   
     
        
            .main-footer__p-link{
@@ -70,14 +67,14 @@
             background-color: rgba(255, 255, 255, 0.1);
         
             transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
-        
+            &:hover,
+            &:focus {
+                background-color: #2196F3;
+                
+            }
         }
         
-        .main-footer__icon-wrapper:hover,
-        .main-footer__icon-wrapper:focus {
-            background-color: #2196F3;
-            
-        }
+        
         
         
         
@@ -92,6 +89,10 @@
             margin-top: 9px;
             margin-top: 9px;
             transition: color var(--transition-dur-and-func);
+            &:not(:first-child) {
+                margin-top:9px;
+                
+            }
            }
 
            .flex-container_footer {
