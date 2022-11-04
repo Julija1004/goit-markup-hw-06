@@ -1,4 +1,4 @@
-.site-nav-item {
+.site-nav__item {
     align-items: center;
     transition: color var(--transition-dur-and-func);
     
@@ -13,7 +13,7 @@
     align-items: center;
    
 }
-.site-nav-link {
+.site-nav__link {
     text-decoration: none;
     color: var(--secondary-color);
     font-weight: 500;
@@ -45,45 +45,7 @@
 
 
 
-.auth-nav {
-    display: flex;
-    column-gap: 50px;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-        
-}
 
-.auth-nav-item {
-font-weight: 500;
-font-size: 14px;
-line-height: 1.3px;
-letter-spacing: 0.02em;
-color: var(--secondary-color);
-text-align: center;
-margin-left: auto;
-align-items: center;
-justify-content: center;
-}
-
-.auth-nav-link {
-    text-decoration: none;
-    color: var(--secondary-color);
-    display: flex;
-    text-decoration: none;
-    align-items: center;
-    transition: color var(--transition-dur-and-func);
-    &:last-child {
-        margin-right: 0px;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        transition: color var(--transition-dur-and-func);
-    }
-   &:focus,&:hover  {color: var(--outline-color);
-
-    }
-}
 
 
 
@@ -102,7 +64,7 @@ justify-content: center;
 }
 
 
-.site-nav-link {
+.site-nav__link {
     text-decoration: none;
     font-weight: 500;
     line-height: 1.14;
@@ -115,7 +77,7 @@ justify-content: center;
 }
 
 }
-.site-nav-item {
+.site-nav__item {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;

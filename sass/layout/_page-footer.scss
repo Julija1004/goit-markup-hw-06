@@ -58,9 +58,7 @@
         }
         
         .main-footer__icon-wrapper{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @extend %align;
             width: 44px;
             height: 44px;
             border-radius: 50%;
@@ -81,7 +79,7 @@
         .main-footer__svg{
         fill: #FFFFFF;
         }
-        .link-footer {
+        .main-footer__link {
             text-decoration: none;
             color: var(--secondary-color);
             font-weight: 400;

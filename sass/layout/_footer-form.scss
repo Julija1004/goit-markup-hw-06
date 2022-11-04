@@ -64,9 +64,7 @@ margin-bottom: 20px;
 
     position: relative;
 
-    display: flex;
-    align-items: center;
-    justify-content: start;
+    @extend %align;
     min-width: 200px;
     height: 50px;
 

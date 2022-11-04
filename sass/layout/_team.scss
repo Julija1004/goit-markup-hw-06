@@ -1,6 +1,7 @@
 .team{
     background-color: #F5F4FA;
     padding-bottom: 94px;
+    
 }
 .team-wrapper{
     padding-top: 30px;
@@ -28,20 +29,17 @@
     
     }
     .team-section-svg-container {
-        display: flex;
-        justify-content: center;
+        @extend %align;
         gap: 10px;
         margin-top: 16px;
-        align-items: center;
+        
         
     }
     
     
     .team-section-icon-wrapper {
     
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %align;
         width: 44px;
         height: 44px;
         border-radius: 50%;

@@ -7,9 +7,7 @@
     justify-content: space-between;
 }
 .works-headings {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %align;
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: 0.03em;

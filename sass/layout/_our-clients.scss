@@ -18,9 +18,7 @@
 }
 
 .our-clients-link{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %align;
     width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
