@@ -1,7 +1,7 @@
 .site-nav__item {
     align-items: center;
     transition: color var(--transition-dur-and-func);
-    
+
     &:not(:last-child) {
         margin-right: 50px
     }
@@ -11,8 +11,9 @@
     display: flex;
     column-gap: 50px;
     align-items: center;
-   
+
 }
+
 .site-nav__link {
     text-decoration: none;
     color: var(--secondary-color);
@@ -22,17 +23,18 @@
     align-items: center;
     margin-left: auto;
     transition: color var(--transition-dur-and-func);
-    &:focus {color: var(--outline-color);
+
+    &:focus {
+        color: var(--outline-color);
+    }
 }
 
-
-}
-
-.is-active{
+.is-active {
     color: var(--outline-color);
-    &::after{
+
+    &::after {
         position: absolute;
-        bottom: -32px; 
+        bottom: -32px;
         left: 0;
         width: 100%;
         content: "";
@@ -43,13 +45,6 @@
     }
 }
 
-
-
-
-
-
-
-
 .current {
     color: var(--outline-color);
     text-decoration: none;
@@ -58,7 +53,9 @@
     font-size: 14px;
     position: relative;
     transition: color var(--transition-dur-and-func);
-    &:hover, &:focus {
+
+    &:hover,
+    &:focus {
         color: var(--outline-color)
     }
 }
@@ -72,11 +69,14 @@
     color: var(--main-color-fomt);
     display: flex;
     transition: var(--outline-color);
-    &:hover, &:focus {
+
+    &:hover,
+    &:focus {
         color: var(--outline-color);
-}
+    }
 
 }
+
 .site-nav__item {
     font-family: 'Roboto';
     font-style: normal;
@@ -84,6 +84,5 @@
     font-size: 14px;
     line-height: 1.33;
     letter-spacing: 0.02em;
-    
-    
-    }
+
+}

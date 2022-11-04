@@ -1,4 +1,4 @@
-.logo-dark {
+.header__logo {
     font-family: 'Raleway';
     text-decoration: none;
     font-style: normal, sans-serif;
@@ -13,12 +13,12 @@
 .logo-margin {
     margin-right: 93px;
 }
-.logo-color-change {
+.header__logo-dark {
     color: var(--main-color-fomt);
     
     
 }
-.logo-white {
+.footer-logo {
     font-family: 'Raleway';
     text-decoration: none;
     font-style: normal, sans-serif;
@@ -31,6 +31,6 @@
     transition: color var(--transition-dur-and-func);
     
 }
-.logo-color {
+.footer-logo__white {
     color: var(--main-light);
     }

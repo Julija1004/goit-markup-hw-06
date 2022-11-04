@@ -4,7 +4,6 @@
     padding-right: 15px;
     margin-inline: auto;
 }
-.flex-container{
-    display: flex;
-    align-items: center;
+.flex {
+    @extend%flex;
 }
